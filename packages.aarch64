@@ -4,7 +4,6 @@ haveged
 iptables-nft
 net-tools
 netctl
-rpi-eeprom
 which
 
 alsa-utils
@@ -13,10 +12,8 @@ b43-fwcutter
 base
 bind-tools
 brltty
-broadcom-wl
 btrfs-progs
 clonezilla
-cloud-init
 crda
 cryptsetup
 darkhttpd
@@ -28,7 +25,6 @@ dmraid
 dnsmasq
 dosfstools
 e2fsprogs
-edk2-shell
 efibootmgr
 espeakup
 ethtool
@@ -60,7 +56,6 @@ man-db
 man-pages
 mc
 mdadm
-memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -85,7 +80,6 @@ ppp
 pptpclient
 pv
 qemu-guest-agent
-refind
 reiserfsprogs
 rp-pppoe
 rsync
@@ -97,7 +91,6 @@ smartmontools
 sof-firmware
 squashfs-tools
 sudo
-syslinux
 systemd-resolvconf
 tcpdump
 terminus-font
@@ -109,7 +102,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
 vpnc
 wget
 wireless-regdb
