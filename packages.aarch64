@@ -81,7 +81,6 @@ pptpclient
 pv
 qemu-guest-agent
 reiserfsprogs
-rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
@@ -112,7 +111,6 @@ xfsprogs
 xl2tpd
 zsh
 
-# GUI
 plasma
 plasma-nm
 plasma-meta
