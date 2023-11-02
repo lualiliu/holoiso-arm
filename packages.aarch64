@@ -37,7 +37,6 @@ gpart
 gpm
 gptfdisk
 grml-zsh-config
-grub
 hdparm
 irssi
 iw
@@ -109,3 +108,9 @@ wpa_supplicant
 wvdial
 xl2tpd
 zsh
+
+plasma-desktop
+plasma-nm
+plasma-meta
+xorg-server
+konsole
