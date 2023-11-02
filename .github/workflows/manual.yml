@@ -36,8 +36,6 @@ jobs:
           sudo mount --bind ./builder ./builder
           sudo cp /usr/bin/qemu-aarch64-static ./builder/usr/bin/qemu-aarch64-static
           sudo cp -f ./rootfs/etc/pacman.conf ./builder/etc/pacman.conf
-          sudo cp -f ./rootfs/etc/systemd/system/resize2fs_once.service ./builder/etc/systemd/system/resize2fs_once.service
-
           ${{ env.BUILD_SH }} "pacman -R --ask=4 linux-aarch64"
           ${{ env.BUILD_SH }} "pacman -Syyu --ask=4 arch-install-scripts cloud-guest-utils"
         shell: bash
@@ -87,6 +85,7 @@ jobs:
       - name: create and enable resize2fs_once service
         run: |
           ${{ env.BUILD_SH }} "cp -f /usr/bin/growpart /mnt/usr/local/bin/growpart"
+          ${{ env.BUILD_SH }} "curl -L -o /mnt/etc/systemd/system/resize2fs_once.service https://raw.githubusercontent.com/lualiliu/holoiso-aarch64/master/rootfs/etc/systemd/system/resize2fs_once.service"
           ${{ env.BUILD_SH }} "chmod a+x /mnt/usr/local/bin/growpart"
           ${{ env.BUILD_SH }} "systemctl --root=/mnt enable resize2fs_once.service"
         shell: bash
